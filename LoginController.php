@@ -25,8 +25,12 @@ else{
 function Login($username, $password)
 {
     include('User.php');
+    include('LoginController.php');
+
+    $controller = new Controller();
     $currentUser = new User(null,$username,$password,null,null);
-    foreach ($this->getUsers() as $user)
+    
+    foreach ($controller->getUsers() as $user)
     {
         if ($user['username'] == $currentUser->getUsername() && $user['password'] == $currentUser->getPassword())
         {
