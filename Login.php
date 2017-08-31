@@ -1,16 +1,3 @@
-<?php
-
-    if(isset($_GET['username']))
-    {
-        $username = $_GET['username'];
-    }
-
-    if(isset($_GET['password']))
-    {
-        $password = $_GET['password'];
-    }
-?>
-
 <html>
 <head>
     <title>Login</title>
@@ -26,8 +13,7 @@
         <?php
             if(isset($_GET['error']))
             {
-                $error = $_GET['error'];
-                echo '<label class="danger"> . $error . </label>';
+                echo '<label class="danger">'. $_GET['error'] . '</label> <br>';
             }
         ?>
 
