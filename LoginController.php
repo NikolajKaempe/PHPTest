@@ -12,7 +12,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
     try{
         2+2;
 
-        header('location: HOME.php?username=' . $username);
+        header('location: Home.php?username=' . $username);
     }
     catch (Exception $e)
     {
