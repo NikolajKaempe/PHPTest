@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<h1>Welcome <?php $_GET['username'] ?></h1>
+<h1>Welcome <?php echo $_GET['username']; ?></h1>
 <h2>Please login to continue!</h2>
 
 </body>

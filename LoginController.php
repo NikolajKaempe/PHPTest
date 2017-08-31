@@ -10,8 +10,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
     $password = $_POST['password'];
 
     try{
-        2+2;
-
+        throw new Exception("Error message works !");
         header('location: Home.php?username=' . $username);
     }
     catch (Exception $e)
