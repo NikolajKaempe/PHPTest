@@ -27,15 +27,22 @@ function Login($username, $password)
     include('User.php');
     include('LoginController.php');
 
-    $controller = new Controller();
-    $currentUser = new User(null,$username,$password,null,null);
-    
-    foreach ($controller->getUsers() as $user)
+    try
     {
-        if ($user['username'] == $currentUser->getUsername() && $user['password'] == $currentUser->getPassword())
+        $controller = new Controller();
+        $currentUser = new User(null,$username,$password,null,null);
+
+        foreach ($controller->getUsers() as $user)
         {
-            header('location: Home.php?username=' . $username);
+            if ($user['username'] == $currentUser->getUsername() && $user['password'] == $currentUser->getPassword())
+            {
+                header('location: Home.php?username=' . $username);
+            }
         }
+        throw new Exception("Invalid username or password");
     }
-    throw new Exception("Invalid username or password");
+    catch (Exception $e)
+    {
+        throw $e;
+    }
 }
