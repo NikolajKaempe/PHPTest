@@ -10,8 +10,7 @@ if(isset($_POST['username']) && isset($_POST['password']))
     $password = $_POST['password'];
 
     try{
-        throw new Exception("Error message works !");
-        header('location: Home.php?username=' . $username);
+        Login($username, $password);
     }
     catch (Exception $e)
     {
@@ -23,3 +22,16 @@ else{
 }
 
 
+function Login($username, $password)
+{
+    include('User.php');
+    $currentUser = new User(null,$username,$password,null,null);
+    foreach ($this->getUsers() as $user)
+    {
+        if ($user['username'] == $currentUser->getUsername() && $user['password'] == $currentUser->getPassword())
+        {
+            header('location: Home.php?username=' . $username);
+        }
+    }
+    throw new Exception("Invalid username or password");
+}
