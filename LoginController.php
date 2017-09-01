@@ -10,8 +10,8 @@ if(isset($_POST['username']) && isset($_POST['password']))
     $password = $_POST['password'];
 
     try{
-        header('location: Login.php?error=Username or Password not set');
-        //Login($username, $password);
+        //header('location: Login.php?error=Username or Password not set');
+        Login($username, $password);
     }
     catch (Exception $e)
     {
