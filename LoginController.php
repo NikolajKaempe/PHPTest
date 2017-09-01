@@ -1,10 +1,10 @@
 <?php
 
-//include ('user.php');
+include('User.php');
+include('LoginController.php');
 
 if(isset($_POST['username']) && isset($_POST['password']))
 {
-    //$User-> new User(null,$_POST['username',$_POST['password'],null,null]
 
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -24,8 +24,6 @@ else{
 
 function Login($username, $password)
 {
-    include('User.php');
-    include('LoginController.php');
 
     try
     {
