@@ -10,8 +10,8 @@ if(isset($_POST['username']) && isset($_POST['password']))
     $password = $_POST['password'];
 
     try{
-        header('location: Home.php?username=' . $username);
-        //Login($username, $password);
+        //header('location: Home.php?username=' . $username);
+        $this->Login($username, $password);
     }
     catch (Exception $e)
     {
