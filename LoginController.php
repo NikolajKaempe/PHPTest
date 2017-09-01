@@ -1,7 +1,7 @@
 <?php
 
 include('User.php');
-include('LoginController.php');
+include('Controller.php');
 
 if(isset($_POST['username']) && isset($_POST['password']))
 {
