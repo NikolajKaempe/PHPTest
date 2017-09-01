@@ -22,7 +22,7 @@ class Controller
     }
     public function __construct()
     {
-        $User1 = new User();
+        $User1 = new User(1, "Hejsae", "Password11", null, null);
         $User2 = new User(2, "Jeffjeff", "Password12", null, null);
         $User3 = new User(3, "OliverOli", "Password13", null, null);
         $User4 = new User(4, "MarleneMM", "Password14", null, null);
