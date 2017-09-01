@@ -24,7 +24,6 @@ else{
 
 function Login($username, $password)
 {
-
     try
     {
         $controller = new Controller();

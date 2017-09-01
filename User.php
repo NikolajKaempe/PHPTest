@@ -15,7 +15,7 @@ class User
     private $lastLoginAttempt;
     private $failedLoginAttempts;
 
-    public function _construct($id=null, $username, $password, $lastLoginAttempt=null, $failedLoginAttempts=null)
+    public function __construct($id=null, $username, $password, $lastLoginAttempt=null, $failedLoginAttempts=null)
     {
         try
         {
