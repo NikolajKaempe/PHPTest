@@ -3,7 +3,7 @@ h1, h2, label {
     color: dodgerblue;
 }
 
-textarea {
+.myTextArea {
     color: dodgerblue;
     width: 40%;
 }
