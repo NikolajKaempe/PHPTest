@@ -9,13 +9,13 @@
 <body>
 <form action="LoginController.php" method="post">
     <div class="container" style="margin-top: 30px; margin-bottom: 30px">
-        <h1>Welcome!</h1>
-        <h2>Please login to continue!</h2>
+        <h1 style="color: dodgerblue">Welcome!</h1>
+        <h2 style="color: dodgerblue">Please login to continue!</h2>
 
         <?php
             if(isset($_GET['error']))
             {
-                echo '<label style="margin-left: 50px; color: dodgerblue"  class="label label-danger">'. $_GET['error'] . '</label> <br>';
+                echo '<label style="margin-left: 50px"  class="label label-danger">'. $_GET['error'] . '</label> <br>';
             }
         ?>
 
