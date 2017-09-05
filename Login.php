@@ -8,9 +8,9 @@
 
 <body>
 <form action="LoginController.php" method="post">
-    <h1>Welcome!</h1>
-    <h2>Please login to continue!</h2>
     <div class="container" style="margin-top: 30px; margin-bottom: 30px">
+        <h1>Welcome!</h1>
+        <h2>Please login to continue!</h2>
 
         <?php
             if(isset($_GET['error']))
@@ -20,7 +20,7 @@
         ?>
 
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus>
+        <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus maxlength="50">
         <br>
         <label for="password" class="sr-only">Password</label>
         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
