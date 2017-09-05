@@ -4,5 +4,10 @@ h1, h2 {
 }
 
 textarea {
-    width: 50%;
+    color: dodgerblue;
+    width: 40%;
+}
+
+label{
+    color: dodgerblue;
 }
