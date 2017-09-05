@@ -19,11 +19,11 @@
             }
         ?>
 
-        <label for="username">Username</label>
-        <input type="text" style="width: 50%" name="username" id="username" class="form-control" placeholder="Username" required autofocus>
+        <label style="color: dodgerblue" for="username">Username</label>
+        <input type="text" style="width: 50%; color: dodgerblue" name="username" id="username" class="form-control" placeholder="Username" required autofocus>
         <br>
-        <label for="password" class="sr-only">Password</label>
-        <input type="password" style="width: 50%" name="password" id="password" class="form-control" placeholder="Password" required>
+        <label for="password" style="color: dodgerblue" class="sr-only">Password</label>
+        <input type="password" style="width: 50%; color: dodgerblue" name="password" id="password" class="form-control" placeholder="Password" required>
 
         <button style="margin-top: 30px; margin-bottom: 30px" class="btn btn-primary" type="submit">Sing in</button>
 
