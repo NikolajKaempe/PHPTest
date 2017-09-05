@@ -10,7 +10,7 @@
 <form action="LoginController.php" method="post">
     <h1>Welcome!</h1>
     <h2>Please login to continue!</h2>
-    <div style="margin-top: 30px; margin-bottom: 30px">
+    <div class="container" style="margin-top: 30px; margin-bottom: 30px">
 
         <?php
             if(isset($_GET['error']))
