@@ -1,13 +1,9 @@
 
-h1, h2 {
+h1, h2, label {
     color: dodgerblue;
 }
 
 textarea {
     color: dodgerblue;
     width: 40%;
-}
-
-label{
-    color: dodgerblue;
 }

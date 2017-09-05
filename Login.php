@@ -4,7 +4,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/PrimaryStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <?php include_once'css/PrimaryStyle.css'  ?>
+    <style><?php include_once'css/PrimaryStyle.css'?></style>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
         <label for="username">Username</label>
         <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus>
         <br>
-        <label for="password" class="sr-only">Password</label>
+        <label for="password">Password</label>
         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
 
         <button style="margin-top: 30px; margin-bottom: 30px" class="btn btn-primary" type="submit">Sing in</button>
