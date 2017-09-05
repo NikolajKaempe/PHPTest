@@ -1,4 +1,8 @@
 
-h2 {
+h1, h2 {
     color: dodgerblue;
+}
+
+textarea {
+    width: 50%;
 }

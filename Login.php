@@ -2,7 +2,7 @@
 <head>
     <title>Login</title>
 
-    <link rel="stylesheet" href="/css/PrimaryStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/PrimaryStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
@@ -21,7 +21,7 @@
         ?>
 
         <label for="username">Username</label>
-        <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus maxlength="50">
+        <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus>
         <br>
         <label for="password" class="sr-only">Password</label>
         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
