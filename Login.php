@@ -2,6 +2,7 @@
 <head>
     <title>Login</title>
 
+    <link rel="stylesheet" href="/css/PrimaryStyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
 </head>
@@ -15,7 +16,7 @@
         <?php
             if(isset($_GET['error']))
             {
-                echo '<label style="margin-left: 50px" class="label label-warning">'. $_GET['error'] . '</label> <br>';
+                echo '<label style="margin-left: 50px" class="label label-danger">'. $_GET['error'] . '</label> <br>';
             }
         ?>
 
