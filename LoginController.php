@@ -12,7 +12,8 @@ if(isset($_POST['username']) && isset($_POST['password']))
     try{
 
         //header('location: Home.php?username=' . $username);
-        $this->Login($username, $password);
+        //$this->Login($username, $password);
+        header('location: Login.php?error=Username or Password not set');
 
     }
     catch (Exception $e)

@@ -25,8 +25,10 @@
         <label for="password" class="sr-only">Password</label>
         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
 
+
+        <button class="btn btn-primary" type="submit">Sing in</button>
+
     </div>
-    <button class="btn btn-primary" type="submit">Sing in</button>
 </form>
 
 </body>
