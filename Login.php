@@ -17,12 +17,16 @@
                 echo '<label style="margin-left: 50px"  class="label label-danger">'. $_GET['error'] . '</label> <br>';
             }
         ?>
+        <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text"  name="username" id="username" class="myTextArea" placeholder="Username" required autofocus>
+            <br>
+        </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password"  name="password" id="password" class="myTextArea" placeholder="Password" required>
+        </div>
 
-        <label for="username">Username</label>
-        <input type="text"  name="username" id="myTextArea" class="form-control" placeholder="Username" required autofocus>
-        <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="myTextArea" class="form-control" placeholder="Password" required>
 
         <button style="margin-top: 30px; margin-bottom: 30px" class="btn btn-primary" type="submit">Sing in</button>
 
