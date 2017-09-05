@@ -19,10 +19,10 @@
         ?>
 
         <label for="username">Username</label>
-        <input type="text" style="myTextArea"  name="username" id="username" class="form-control" placeholder="Username" required autofocus>
+        <input type="text"  name="username" id="myTextArea" class="form-control" placeholder="Username" required autofocus>
         <br>
         <label for="password">Password</label>
-        <input type="password" style="myTextArea" name="password" id="password" class="form-control" placeholder="Password" required>
+        <input type="password" name="password" id="myTextArea" class="form-control" placeholder="Password" required>
 
         <button style="margin-top: 30px; margin-bottom: 30px" class="btn btn-primary" type="submit">Sing in</button>
 
