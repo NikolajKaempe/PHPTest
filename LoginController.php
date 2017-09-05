@@ -1,8 +1,5 @@
 <?php
 
-include('User.php');
-include('Controller.php');
-
 if(isset($_POST['username']) && isset($_POST['password']))
 {
 
@@ -28,6 +25,10 @@ else{
 
 function Login($username, $password)
 {
+
+    include_once('User.php');
+    include_once('Controller.php');
+
     try
     {
         $controller = new Controller();

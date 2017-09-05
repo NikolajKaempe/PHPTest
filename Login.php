@@ -15,7 +15,7 @@
         <?php
             if(isset($_GET['error']))
             {
-                echo '<label style="margin-left: 50px" class="label-danger">'. $_GET['error'] . '</label> <br>';
+                echo '<label style="margin-left: 50px" class="label label-warning">'. $_GET['error'] . '</label> <br>';
             }
         ?>
 
