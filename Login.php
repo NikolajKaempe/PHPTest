@@ -15,7 +15,7 @@
         <?php
             if(isset($_GET['error']))
             {
-                echo '<label class="danger">'. $_GET['error'] . '</label> <br>';
+                echo '<label style="margin-left: 50px" class="label-danger">'. $_GET['error'] . '</label> <br>';
             }
         ?>
 
@@ -26,7 +26,7 @@
         <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
 
 
-        <button class="btn btn-primary" type="submit">Sing in</button>
+        <button style="margin-top: 30px; margin-bottom: 30px" class="btn btn-primary" type="submit">Sing in</button>
 
     </div>
 </form>
