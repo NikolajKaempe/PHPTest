@@ -10,15 +10,9 @@ if(isset($_POST['username']) && isset($_POST['password']))
     $password = $_POST['password'];
 
     try{
-        //header('location: Home.php?username=' . $username);
-        $result = $this->Login($username, $password);
 
-        if ($result == true){
-            header('location: Home.php?username=' . $username);
-        }
-        else{
-            throw new Exception("Invalid username or password");
-        }
+        //header('location: Home.php?username=' . $username);
+        $this->Login($username, $password);
 
     }
     catch (Exception $e)
@@ -42,10 +36,11 @@ function Login($username, $password)
         {
             if ($user['username'] == $currentUser->getUsername() && $user['password'] == $currentUser->getPassword())
             {
-                return true;
+                header('location: Home.php?username=' . $username);
+                break;
             }
         }
-        return false;
+        throw new Exception("Invalid username or password");
     }
     catch (Exception $e)
     {
