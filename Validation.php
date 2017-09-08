@@ -33,7 +33,7 @@ class Validation
             $this->validateValue($value);
             if(!$this->isStringLenghtValid(3, 20, $value))
             {
-                throw new Exception('IllegalLenghtException');
+                throw new Exception('IllegalUsernameLengthException');
             }
         }
         catch(Exception $exception)
@@ -49,7 +49,7 @@ class Validation
             $this->validateValue($value);
             if(!$this->isStringLenghtValid(8, 30, $value))
             {
-                throw new Exception('IllegalLenghtException');
+                throw new Exception('IllegalPasswordLengthException');
             }
             if (!preg_match('/[A-Za-z].*[0-9]|[0-9].*[A-Za-z]/', $value))
             {

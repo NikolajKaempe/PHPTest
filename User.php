@@ -6,6 +6,9 @@
  * Time: 12:20
  */
 
+include_once('Validation.php');
+include_once('Controller.php');
+
 class User
 {
     public static $lastID=0;
@@ -112,5 +115,27 @@ class User
     public function setFailedLoginAttempts($failedLoginAttempts)
     {
         $this->failedLoginAttempts = $failedLoginAttempts;
+    }
+
+    public function tryLoginUser($username, $password)
+    {
+        try
+        {
+            $controller = new Controller();
+
+            foreach ($controller->getUsers() as $user)
+            {
+                if ($user->getUsername() == $username && $user->getPassword() == $password)
+                {
+                    header('location: Home.php?username=' . $username);
+                    exit;
+                }
+            }
+            throw new Exception("Invalid username or password");
+        }
+        catch (Exception $e)
+        {
+            throw $e;
+        }
     }
 }
